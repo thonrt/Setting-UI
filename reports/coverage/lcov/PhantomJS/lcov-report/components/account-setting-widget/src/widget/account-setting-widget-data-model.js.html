@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components\account-setting-widget\src\widget\account-setting-widget-data-model.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../../prettify.css">
+    <link rel="stylesheet" href="../../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header high">
+    <h1>Code coverage report for <span class="entity">components\account-setting-widget\src\widget\account-setting-widget-data-model.js</span></h1>
+    <h2>
+        Statements: <span class="metric">83.67% <small>(41 / 49)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">50% <small>(3 / 6)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">85.71% <small>(12 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">83.67% <small>(41 / 49)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">components/account-setting-widget/src/widget/</a> &#187; account-setting-widget-data-model.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">30</span>
+<span class="cline-any cline-yes">30</span>
+<span class="cline-any cline-yes">30</span>
+<span class="cline-any cline-yes">30</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">define(function() {
+    "use strict";
+&nbsp;
+    var portfolioCommon = require("portfolio-components-common");
+    var ModelBase = portfolioCommon.widget.ModelBase;
+&nbsp;
+    var dataModel = ModelBase.extend({
+&nbsp;
+        defaults: function() {
+            return {
+&nbsp;
+                requestSetting: {
+&nbsp;
+                    //for common request
+                    all_account_settings: {
+                        cacheId: "all_account_settings",
+                        resource: "paapi/v1/portfolios/setting/option",
+                        type: "GET"
+                    },
+&nbsp;
+                    change_account_setting: {
+                        resource: "paapi/v1/portfolios/{portfolioId}/setting",
+                        type: "POST"
+                    }
+                }
+            };
+        },
+&nbsp;
+&nbsp;
+        initialize: function() {
+&nbsp;
+&nbsp;
+            ModelBase.prototype.initialize.apply(this, arguments);
+&nbsp;
+            //==============================================
+            this.requestAccountSettingData();
+            return this;
+        },
+&nbsp;
+&nbsp;
+        requestAccountSettingData: function() {
+            clearTimeout(this.timeout_request);
+            var self = this;
+            this.timeout_request = setTimeout(function() {
+                self.requestAccountSettingDataNow();
+            }, 10);
+&nbsp;
+            return this;
+        },
+&nbsp;
+        requestAccountSettingDataNow: function() {
+            var self = this;
+            this.requestData("all_account_settings").done(function(data) {
+                var accountSettingData = self.getAccountSetting(data);
+                self.set("all_account_settings", accountSettingData);
+                self.requestDefaultAccountData();
+            }).fail(<span class="fstat-no" title="function not covered" >function(info) {</span>
+<span class="cstat-no" title="statement not covered" >                self.hideLoading();</span>
+<span class="cstat-no" title="statement not covered" >                self.showErrorInfo("Setting now available, please try aigain");</span>
+<span class="cstat-no" title="statement not covered" >                console.log("Request account setting  fail:", info);</span>
+            });
+        },
+&nbsp;
+        requestDefaultAccountData: function() {
+            var self = this;
+            var portfolioId = this.getSetting("portfolioId");
+            var groupId = this.getSetting("groupId");
+            var source = this.getSetting("source");
+            var d_accountSetting = this.service.requestAccountSettingData({
+                portfolioId: portfolioId,
+                groupId: groupId,
+                source: source
+            });
+            d_accountSetting.done(function(accountSetting) {
+                self.set("portfolio_account_setting", accountSetting);
+            }).fail(<span class="fstat-no" title="function not covered" >function(info) {</span>
+<span class="cstat-no" title="statement not covered" >                self.hideLoading();</span>
+<span class="cstat-no" title="statement not covered" >                self.showErrorInfo("Setting now available, please try aigain");</span>
+<span class="cstat-no" title="statement not covered" >                console.log("Request default account setting fail:", info);</span>
+            });
+        },
+&nbsp;
+        putDefaultAccountData: function(putData) {
+            var portfolioId = this.getSetting("portfolioId");
+            var replaceOption = {
+                portfolioId: portfolioId,
+                postData: putData
+            };
+            return this.requestData("change_account_setting", replaceOption);
+        },
+&nbsp;
+        removeAccountSettingDataCache: function(option) {
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (!option) {
+<span class="cstat-no" title="statement not covered" >                return this;</span>
+            }
+            var requestOption = this.getRequestOption("account_setting", option);
+            var cacheId = requestOption.cacheId;
+            this.removeCache(cacheId);
+        },
+&nbsp;
+        getAccountSetting: function(data) {
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (!data) {
+<span class="cstat-no" title="statement not covered" >                return this;</span>
+            }
+            var accountData = {};
+&nbsp;
+            for (var item in data) {
+                <span class="missing-if-branch" title="else path not taken" >E</span>if (data.hasOwnProperty(item)) {
+                    accountData[item] = {};
+                    accountData[item].id = item;
+                    accountData[item].list = data[item];
+                }
+            }
+&nbsp;
+            return accountData;
+        }
+    });
+&nbsp;
+    return dataModel;
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jan 16 2017 11:08:33 GMT+0800 (China Standard Time)</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

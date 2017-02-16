@@ -1,0 +1,285 @@
+{
+  "_meta": {
+    "hint": "OK",
+    "response_status": "200",
+    "spent_time": "61ms",
+    "log_id": "f3962555-34ff-4cf7-b05b-915777e7a152",
+    "serverName": "Adpanstg81",
+    "status": 200
+  },
+  "data": {
+    "isUseRiskFreeInAg": [{
+      "id": "false",
+      "name": "Use Zero Return"
+    }, {
+      "id": "true",
+      "name": "Use Risk-free Proxy"
+    }],
+    "extendedPerformance": [{
+      "id": "false",
+      "name": "Use Holdings Inception Date"
+    }, {
+      "id": "true",
+      "name": "Use Holdings Extended Performance Date"
+    }],
+    "missingReturnOption": [{
+      "id": "0",
+      "name": "Missing Return"
+    }, {
+      "id": "1",
+      "name": "Based On Security's Prices(not handle yet)"
+    }, {
+      "id": "2",
+      "name": "Rescale Weights"
+    }, {
+      "id": "3",
+      "name": "Zero Return"
+    }],
+    "preMissingReturnOption": [{
+      "id": "0",
+      "name": "Do Not Calculate Account Level Performance"
+    }, {
+      "id": "1",
+      "name": "Rescale Remaining Holdings"
+    }],
+    "afterMissingReturnOption": [{
+      "id": "0",
+      "name": "Do Not Calculate Account Level Performance"
+    }, {
+      "id": "1",
+      "name": "Rescale Remaining Holdings"
+    }],
+    "rebalanceFrequencyId": [{
+      "id": "2",
+      "name": "Monthly"
+    }, {
+      "id": "3",
+      "name": "Quarterly"
+    }, {
+      "id": "4",
+      "name": "Semi-Annually"
+    }, {
+      "id": "5",
+      "name": "Annually"
+    }, {
+      "id": "7",
+      "name": "Buy And Hold"
+    }, {
+      "id": "8",
+      "name": "Daily"
+    }],
+    "rebalanceBasedOn": [{
+      "id": "false",
+      "name": "Calendar Period End"
+    }, {
+      "id": "true",
+      "name": "Rolling Peroid Based On Portfolio Date"
+    }],
+    "startDateCalculationTypeId": [{
+      "id": "1",
+      "name": "Earliest Common"
+    }, {
+      "id": "2",
+      "name": "First Portfolio Date"
+    }, {
+      "id": "3",
+      "name": "Earliest Available"
+    }],
+    "performanceSourceId": [{
+      "id": "0",
+      "name": "Calculate Based on Underlying Positions, Using:"
+    }, {
+      "id": "1",
+      "name": "Morningstar Data",
+      "parentId": "0"
+    }, {
+      "id": "3",
+      "name": "Imported Return Data",
+      "parentId": "0"
+    }, {
+      "id": "4",
+      "name": "Imported Return Data, Falling Back to Morningstar Data",
+      "parentId": "0"
+    }, {
+      "id": "2",
+      "name": "Imported Account-level Performance"
+    }],
+    "managementFeeFrequency": [{
+      "id": "1",
+      "name": "Daily"
+    }, {
+      "id": "2",
+      "name": "Monthly"
+    }, {
+      "id": "3",
+      "name": "Quarterly"
+    }, {
+      "id": "4",
+      "name": "Semi-Annually"
+    }, {
+      "id": "5",
+      "name": "Annually"
+    }],
+    "useGrossReturn": [{
+      "id": "false",
+      "name": "Net, Imported Return Would Use Imported Net Return Series"
+    }, {
+      "id": "true",
+      "name": "Gross, Imported Return Would Use Imported Gross Return Series"
+    }],
+    "realSMAFlag": [{
+      "id": "false",
+      "name": "No"
+    }, {
+      "id": "true",
+      "name": "Yes"
+    }],
+    "performanceFrequencies": [{
+      "id": "4",
+      "name": "Monthly"
+    }, {
+      "id": "5",
+      "name": "Daily"
+    }, {
+      "id": "6",
+      "name": "Quarterly"
+    }],
+    "baseCurrency": [{
+      "id": "ARS",
+      "name": "Argentine Peso"
+    }, {
+      "id": "AUD",
+      "name": "Australian Dollar"
+    }, {
+      "id": "BHD",
+      "name": "Bahraini Dinar"
+    }, {
+      "id": "THB",
+      "name": "Baht"
+    }, {
+      "id": "BRL",
+      "name": "Brazilian Real"
+    }, {
+      "id": "CAD",
+      "name": "Canadian Dollar"
+    }, {
+      "id": "CLP",
+      "name": "Chilean Peso"
+    }, {
+      "id": "CNY",
+      "name": "Chinese Yuan Renminbi"
+    }, {
+      "id": "COP",
+      "name": "Colombian Peso"
+    }, {
+      "id": "CYP",
+      "name": "Cyprus Pound"
+    }, {
+      "id": "CZK",
+      "name": "Czech Koruna"
+    }, {
+      "id": "HUF",
+      "name": "Forint"
+    }, {
+      "id": "DKK",
+      "name": "Danish Krone"
+    }, {
+      "id": "EEK",
+      "name": "Estonian Kroon"
+    }, {
+      "id": "EUR",
+      "name": "Euro"
+    }, {
+      "id": "HKD",
+      "name": "Hong Kong Dollar"
+    }, {
+      "id": "ISK",
+      "name": "Iceland Krona"
+    }, {
+      "id": "INR",
+      "name": "Indian Rupee"
+    }, {
+      "id": "JPY",
+      "name": "Japanese Yen"
+    }, {
+      "id": "KWD",
+      "name": "Kuwaiti Dinar"
+    }, {
+      "id": "LTL",
+      "name": "Lithuanian Litas"
+    }, {
+      "id": "MYR",
+      "name": "Malaysian Ringgit"
+    }, {
+      "id": "MXN",
+      "name": "Mexican Peso"
+    }, {
+      "id": "MAD",
+      "name": "Moroccan Dirham"
+    }, {
+      "id": "ILS",
+      "name": "New Israeli Sheqel"
+    }, {
+      "id": "TWD",
+      "name": "New Taiwan Dollar"
+    }, {
+      "id": "NZD",
+      "name": "New Zealand Dollar"
+    }, {
+      "id": "NOK",
+      "name": "Norwegian Krone"
+    }, {
+      "id": "UYU",
+      "name": "Peso Uruguayo"
+    }, {
+      "id": "PHP",
+      "name": "Philippine Peso"
+    }, {
+      "id": "GBP",
+      "name": "Pound Sterling"
+    }, {
+      "id": "QAR",
+      "name": "Qatari Rial"
+    }, {
+      "id": "IDR",
+      "name": "Rupiah"
+    }, {
+      "id": "RUB",
+      "name": "Russian Ruble"
+    }, {
+      "id": "SAR",
+      "name": "Saudi Riyal"
+    }, {
+      "id": "SGD",
+      "name": "Singapore Dollar"
+    }, {
+      "id": "SKK",
+      "name": "Slovak Koruna"
+    }, {
+      "id": "ZAR",
+      "name": "South African Rand"
+    }, {
+      "id": "KRW",
+      "name": "South Korean Won"
+    }, {
+      "id": "SEK",
+      "name": "Swedish Krona"
+    }, {
+      "id": "CHF",
+      "name": "Swiss Franc"
+    }, {
+      "id": "TRY",
+      "name": "Turkish Lira"
+    }, {
+      "id": "AED",
+      "name": "UAE Dirham"
+    }, {
+      "id": "USD",
+      "name": "US Dollar"
+    }, {
+      "id": "PLN",
+      "name": "Zloty"
+    }],
+    "customDataPointForDRI": []
+  }
+}

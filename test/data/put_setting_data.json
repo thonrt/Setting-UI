@@ -1,0 +1,15 @@
+{
+  "_meta" : {
+    "hint" : "OK",
+    "response_status" : "200",
+    "spent_time" : "100ms",
+    "log_id" : "451639f6-e2e7-45c3-b249-86cb2f78b958",
+    "serverName" : "Adpanstg81"     
+  },
+  "data" : {
+    "_meta" : {
+      "response_status" : "200214",
+      "hint" : "Portfolio settings update successfully"
+    }
+  }
+}

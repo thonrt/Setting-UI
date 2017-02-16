@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "hint": "OK",
+    "response_status": "200",
+    "spent_time": "176ms",
+    "log_id": "2adafc08-a767-4f47-b63b-3294ed6e5d0e",
+    "serverName": "Adpanstg81",
+    "status": 200
+  },
+  "data": {
+      "portfolioId": "51231804",
+      "baseCurrency": "USD",
+      "benchmarkId": "0P0000J533",
+      "isUseRiskFreeInAg": true,
+      "riskFreeProxyId": "0P000099ZL",
+      "extendedPerformance": true,
+      "missingReturnOption": "0",
+      "preMissingReturnOption": "",
+      "afterMissingReturnOption": "0",
+      "rebalanceFrequencyId": "3",
+      "rebalanceBasedOn": false,
+      "startDateCalculationTypeId": "2",
+      "performanceSourceId": "1",
+      "calendarPeriodFlag": false,
+      "managementFeeEffectivePeriodType": "0",
+      "managementFeeForPerformance": "0.0",
+      "managementFeeFrequency": "5",
+      "useGrossReturn": false,
+      "realSMAFlag": false,
+      "performanceFrequencies": "5",
+      "lastModifiedBy": "957cc79c-c032-4510-a476-b9c0c6c5efe4",
+      "lastModifiedTime": "2016-11-21",
+      "attachedModelPortfolioId": "0",
+      "benchmarkName": "Morningstar Mod Tgt Risk TR USD",
+      "riskFreeProxyName": "Morningstar Cash TR USD"
+  }
+}

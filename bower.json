@@ -1,0 +1,19 @@
+{
+    "name": "portfolio-components-account-setting-widget",
+    "version": "1.12.0",
+    "main": [
+        "build/portfolio-components-account-setting-widget.js"
+    ],
+    "keywords": [
+        "directive",
+        "ui"
+    ],
+    "dependencies": {
+        "portfolio-components-common": "*"
+    },
+    "devDependencies": {},
+    "ignore": [
+        "src/index.html",
+        "test/"
+    ]
+}

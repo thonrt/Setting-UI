@@ -1,0 +1,192 @@
+{
+    "_meta": {
+        "hint": "OK",
+        "response_status": "200",
+        "spent_time": "182ms",
+        "log_id": "9b5db75e-3d87-415e-8375-c4c450a96175",
+        "serverName": "Adpanstg81.morningstar.com"
+    },
+    "data": {
+        "datas": [{
+            "secId": "XIUSA000MA",
+            "perfId": "0P00001G5J",
+            "name": "S&P BSE SENSEX India INR",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XBOM",
+            "ticker": "1",
+            "universeName": "Index",
+            "exchangeName": "MUMBAI STOCK EXCHANGE"
+        }, {
+            "secId": "FOUSA05LPT",
+            "perfId": "0P00006F2Q",
+            "name": "AMEX Cleantech PR USD",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XASE",
+            "ticker": "1717570",
+            "universeName": "Index",
+            "exchangeName": "NYSE AMEX EQUITIES"
+        }, {
+            "secId": "FOUSA05LPW",
+            "perfId": "0P00006F2T",
+            "name": "AMEX Defense PR USD",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XASE",
+            "ticker": "1521845",
+            "universeName": "Index",
+            "exchangeName": "NYSE AMEX EQUITIES"
+        }, {
+            "secId": "FOUSA05LPZ",
+            "perfId": "0P00006F2W",
+            "name": "AMEX Electric&Gas Infrastructure PR USD",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XASE",
+            "ticker": "1529849",
+            "universeName": "Index",
+            "exchangeName": "NYSE AMEX EQUITIES"
+        }, {
+            "secId": "FOUSA088DR",
+            "perfId": "0P0000I2TT",
+            "name": "AMEX Environmental Services PR USD",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XASE",
+            "ticker": "1721195",
+            "universeName": "Index",
+            "exchangeName": "NYSE AMEX EQUITIES"
+        }, {
+            "secId": "FOUSA05NTY",
+            "perfId": "0P00006HF6",
+            "name": "Dynamic HC Services Intellidex PR USD",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XASE",
+            "ticker": "1719275",
+            "universeName": "Index",
+            "exchangeName": "NYSE AMEX EQUITIES"
+        }, {
+            "secId": "FOUSA05SFL",
+            "perfId": "0P00006MQZ",
+            "name": "NASDAQ 100 After Hours Indicator PR USD",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XNAS",
+            "ticker": "1529816",
+            "universeName": "Index",
+            "exchangeName": "NASDAQ"
+        }, {
+            "secId": "FOUSA06WSH",
+            "perfId": "0P0000GD92",
+            "name": "OMXB 10 Expiration PR",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XSTO",
+            "ticker": "1734579",
+            "universeName": "Index",
+            "exchangeName": "NASDAQ OMX NORDIC"
+        }, {
+            "secId": "FOUSA06WKP",
+            "perfId": "0P0000GCW9",
+            "name": "OMXB 10 PR",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XSTO",
+            "ticker": "1734557",
+            "universeName": "Index",
+            "exchangeName": "NASDAQ OMX NORDIC"
+        }, {
+            "secId": "FOUSA06WKO",
+            "perfId": "0P0000GCW8",
+            "name": "OMXB Baltic PR",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XSTO",
+            "ticker": "1734483",
+            "universeName": "Index",
+            "exchangeName": "NASDAQ OMX NORDIC"
+        }, {
+            "secId": "FOUSA06WLE",
+            "perfId": "0P0000GCWX",
+            "name": "OMXB Baltic TR",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XSTO",
+            "ticker": "1734502",
+            "universeName": "Index",
+            "exchangeName": "NASDAQ OMX NORDIC"
+        }, {
+            "secId": "FOUSA06WKT",
+            "perfId": "0P0000GCWC",
+            "name": "OMXB Benchmark Cap PR EUR",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XSTO",
+            "ticker": "1734546",
+            "universeName": "Index",
+            "exchangeName": "NASDAQ OMX NORDIC"
+        }, {
+            "secId": "FOUSA06WKR",
+            "perfId": "0P0000GCWA",
+            "name": "OMXB Benchmark PR",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XSTO",
+            "ticker": "1734513",
+            "universeName": "Index",
+            "exchangeName": "NASDAQ OMX NORDIC"
+        }, {
+            "secId": "FOUSA06WKU",
+            "perfId": "0P0000GCWD",
+            "name": "OMXB Benchmark TR",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XSTO",
+            "ticker": "1734524",
+            "universeName": "Index",
+            "exchangeName": "NASDAQ OMX NORDIC"
+        }, {
+            "secId": "FOUSA06WQP",
+            "perfId": "0P0000GD28",
+            "name": "PHLX Oil Service PR USD",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XNAS",
+            "ticker": "1602267",
+            "universeName": "Index",
+            "exchangeName": "NASDAQ"
+        }, {
+            "secId": "FOUSA06WQZ",
+            "perfId": "0P0000GD2I",
+            "name": "PHLX Utilities PR USD",
+            "universe": "XI",
+            "exchangeId": "EX$$$$XNAS",
+            "ticker": "1807857",
+            "universeName": "Index",
+            "exchangeName": "NASDAQ"
+        }, {
+            "secId": "F00000H35W",
+            "perfId": "0P0000NN8J",
+            "name": "13D Activist I",
+            "universe": "FO",
+            "exchangeId": "EX$$$$XNAS",
+            "ticker": "DDDIX",
+            "universeName": "Open-End Fund",
+            "exchangeName": "NASDAQ"
+        }, {
+            "secId": "FOUSA00COA",
+            "perfId": "0P00002PVK",
+            "name": "1919 Socially Responsive Balanced A",
+            "universe": "FO",
+            "exchangeId": "EX$$$$XNAS",
+            "ticker": "SSIAX",
+            "universeName": "Open-End Fund",
+            "exchangeName": "NASDAQ"
+        }, {
+            "secId": "FOUSA00DEK",
+            "perfId": "0P00002QLW",
+            "name": "1919 Maryland Tax-Free Income A",
+            "universe": "FO",
+            "exchangeId": "EX$$$$XNAS",
+            "ticker": "LMMDX",
+            "universeName": "Open-End Fund",
+            "exchangeName": "NASDAQ"
+        }, {
+            "secId": "F00000VPDZ",
+            "perfId": "0P00015V9B",
+            "name": "1290 Unconstrained Bond Managers I",
+            "universe": "FO",
+            "exchangeId": "EX$$$$XNAS",
+            "ticker": "TNUIX",
+            "universeName": "Open-End Fund",
+            "exchangeName": "NASDAQ"
+        }]
+    }
+}

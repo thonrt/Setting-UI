@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-title" content="portfolio-account-setting-widget">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Preview account-setting-widget</title>
+
+    <!--build:css styles/vendor.css-->
+    <!--bower:css -->
+    <link rel="stylesheet" href="../../bower_components/nouislider/distribute/nouislider.min.css" />
+    <link rel="stylesheet" href="../../bower_components/mui-bootstrap/dist/css/mui.css" />
+    <link rel="stylesheet" href="../../bower_components/mui-bootstrap/dist/css/mui-isolated.css" />
+    <!--endbower-->
+    <!--endbuild-->
+    <style type="text/css">
+    html,
+    body {
+        font-family: "Univers";
+        font-size: 14px;
+    }
+     .header {
+        font-size: 30px;
+        padding: 10px 10px;
+    }
+    .switch-view{
+        position: absolute;
+        top:20px;
+        left:900px;
+        margin-right: 200px;
+        margin-bottom: 20px;
+    }
+
+    .switch-view input{
+        width: 40px;
+    }
+    .container{
+        height: 800px;
+    }
+    .switch-view .select-option{
+        position: absolute;
+        width: 40px;
+        z-index:1;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>Preview account-setting-widget</h2>
+    <div class="switch-view">
+        <input type="text" value="Chart" />
+        <div class="select-option" style="display:none">
+            <div class="item" value="chart">Chart</div>
+            <div class="item" value="grid">Grid</div>
+        </div>
+    </div>
+    <div class="container"></div>
+
+    <!--build:js js/vendor.js-->
+    <!--bower:js-->
+    <script src="../../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/es5-shim/es5-shim.js"></script>
+    <script src="../../bower_components/asterix-core/build/asterix-core.js"></script>
+    <script src="../../bower_components/d3/d3.js"></script>
+    <script src="../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="../../bower_components/tether/dist/js/tether.js"></script>
+    <script src="../../bower_components/tether-select/dist/js/select.js"></script>
+    <script src="../../bower_components/select2/dist/js/select2.js"></script>
+    <script src="../../bower_components/nouislider/distribute/nouislider.js"></script>
+    <script src="../../bower_components/portfolio-components-chart-base/build/portfolio-components-chart-base.js"></script>
+    <script src="../../bower_components/underscore/underscore.js"></script>
+    <script src="../../bower_components/backbone/backbone.js"></script>
+    <script src="../../bower_components/mbc-core/build/mbc-core.js"></script>
+    <script src="../../bower_components/mbc-bar-chart/build/mbc-bar-chart.js"></script>
+    <script src="../../bower_components/mbc-tooltip-plugin/build/mbc-tooltip-plugin.js"></script>
+    <script src="../../bower_components/mbc-donut-chart/build/mbc-donut-chart.js"></script>
+    <script src="../../bower_components/mbc-horizontal-bar-chart/build/mbc-horizontal-bar-chart.js"></script>
+    <script src="../../bower_components/mbc-line-chart/build/mbc-line-chart.js"></script>
+    <script src="../../bower_components/mbc-scatterplot/build/mbc-scatterplot.js"></script>
+    <script src="../../bower_components/mbc-style-box/build/mbc-style-box.js"></script>
+    <script src="../../bower_components/mbc-style-box-equity/build/mbc-style-box-equity.js"></script>
+    <script src="../../bower_components/mbc-style-box-fixed-income/build/mbc-style-box-fixed-income.js"></script>
+    <script src="../../bower_components/mbc-style-box-market-barometer/build/mbc-style-box-market-barometer.js"></script>
+    <script src="../../bower_components/portfolio-components-common/build/portfolio-components-common.js"></script>
+    <!--endbower-->
+    <!--endbuild-->
+
+    <!--build:js js/portfolio-components-account-setting-widget.js-->
+    <script src="../../components/account-setting-widget/build/portfolio-components-account-setting-widget.js"></script>
+    <!--endbuild-->
+
+
+    <script type="text/javascript">
+    'use strict';
+
+        var switchViewButton = $('.switch-view');
+        var selectOption = $(".select-option");
+
+        var components = window.morningstar.components;
+
+        var actionHandler = new components.portfolioCommon.widget.ActionHandler();
+
+        var params = {
+            element: $(".container"),
+            actionHandler: actionHandler,
+            setting: {
+                portfolioId: "FOUSA00JPS"
+            }
+        };
+
+        var conponent = components["portfolioAccountSettingWidget"].createComponent(params);
+
+        actionHandler.bind("all", function(eventName, value) {
+            if (eventName !== "data") {
+                return;
+            }
+            conponent.setProperty(eventName, value);
+        });
+
+        conponent.setProperty("parentSize");
+         // tool bar button click handler
+        switchViewButton.on('click',"input", function() {
+            if(selectOption.visible){
+                selectOption.hide();
+                selectOption.visible = false;
+            }else{
+                selectOption.show();
+                selectOption.visible = true;
+            }
+            // conponent.setProperty("selectedView");
+        });
+
+        selectOption.on("click",function(e){
+            var currenView = $(e.target).attr("value");
+            var currentText = $(e.target).text();
+            switchViewButton.find("input").attr("value",currentText);
+            selectOption.hide();
+            selectOption.visible = false;
+            conponent.setProperty("selectedView",currenView);
+            
+        });
+
+
+        $(window).resize(function() {
+            conponent.setProperty("parentSize");
+        });
+    </script>
+</body>
+
+</html>
