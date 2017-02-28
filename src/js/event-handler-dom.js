@@ -22,10 +22,8 @@ define(function() {
             var dataId = $currentTarget.attr("data-id");
             var showContainer = this.$("." + dataId);
             var hideContainer = this.$("." + dataId).siblings();
-            var showIcon = $currentTarget.find(".item-icon");
-            var hideIcon = $currentTarget.siblings().find(".item-icon");
-            showIcon.show();
-            hideIcon.hide();
+            $currentTarget.addClass("active");
+            $currentTarget.siblings().removeClass("active");
             showContainer.show();
             hideContainer.hide();
             return this;
@@ -127,13 +125,11 @@ define(function() {
             //hide sub Performance source
             // this.$(".sub_performance_source").hide();
             $subRadios.hide();
-            $subRadios.parent().width(0);
 
             if ($elem.hasClass("hasSubRadio")) {
                 //show sub Performance source
                 this.$(".sub_performance_source").show();
                 $subRadios.show();
-                $subRadios.parent().width(320);
 
 
                 var $subChild = $subRadios.find(".radio");

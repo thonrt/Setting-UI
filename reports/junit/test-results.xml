@@ -1,31 +1,69 @@
 <?xml version="1.0"?>
 <testsuites>
-  <testsuite name="PhantomJS 1.9.8 (Windows 7 0.0.0)" package="" timestamp="2017-01-16T03:08:24" id="0" hostname="SZPC2179" tests="22" errors="0" failures="0" time="8.83">
+  <testsuite name="PhantomJS 1.9.8 (Windows 7 0.0.0)" package="" timestamp="2017-02-20T02:01:02" id="0" hostname="SZPC2179" tests="22" errors="0" failures="0" time="0.48">
     <properties>
       <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34"/>
     </properties>
-    <testcase name="get widget" time="0.162" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget"/>
-    <testcase name="widget Cancle button click" time="0.232" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget"/>
-    <testcase name="widget open" time="0.136" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget"/>
-    <testcase name="widget Model Portfolio click" time="0.615" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget General Setting"/>
-    <testcase name="widget Separately Mananged Account click,Yes" time="0.213" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget General Setting"/>
-    <testcase name="widget Separately Mananged Account click,No" time="0.207" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget General Setting"/>
-    <testcase name="widget portfolio Identifier click" time="0.312" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget General Setting"/>
-    <testcase name="change to calculation section" time="0.171" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Cash Performance click" time="0.218" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Missing Performance Data click" time="0.205" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Gaps in Available Performance click" time="0.204" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Performance Source click, sub radio" time="0.205" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Performance Source click,parent radio" time="0.243" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Performance Source click,parent radio" time="0.266" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Portfolio Currency click open and close" time="0.627" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Portfolio Currency click" time="0.637" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Rebalancncing Frequency click" time="0.652" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Import source click" time="0.509" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Portfolio Benchmark click open and close" time="0.628" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Portfolio Benchmark click" time="1.143" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Risk-Free Proxy click" time="1.138" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting"/>
-    <testcase name="widget Save button click" time="0.107" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget"/>
+    <testcase name="get widget" time="0.146" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget"/>
+    <testcase name="widget Cancle button click" time="0.208" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget"/>
+    <testcase name="widget open" time="0.126" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget"/>
+    <testcase name="widget Model Portfolio click" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget General Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Separately Mananged Account click,Yes" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget General Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Separately Mananged Account click,No" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget General Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget portfolio Identifier click" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget General Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="change to calculation section" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Cash Performance click" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Missing Performance Data click" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Gaps in Available Performance click" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Performance Source click, sub radio" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Performance Source click,parent radio" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Performance Source click,parent radio" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Portfolio Currency click open and close" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Portfolio Currency click" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Rebalancncing Frequency click" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Import source click" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Portfolio Benchmark click open and close" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Portfolio Benchmark click" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Risk-Free Proxy click" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget Calculation Setting">
+      <skipped/>
+    </testcase>
+    <testcase name="widget Save button click" time="0" classname="PhantomJS 1.9.8 (Windows 7 0.0.0).accountSettingWidget">
+      <skipped/>
+    </testcase>
     <system-out><![CDATA[
 ]]></system-out>
     <system-err/>

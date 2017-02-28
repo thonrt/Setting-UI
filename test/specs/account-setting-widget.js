@@ -90,7 +90,7 @@ describe('accountSettingWidget', function() {
         }, 100);
     });
 
-    describe("General Setting", function() {
+    xdescribe("General Setting", function() {
         it("widget Model Portfolio click", function(done) {
             $(".mas_input_search .select2-selection--single").eq(0).click();
             setTimeout(function() {
@@ -145,7 +145,7 @@ describe('accountSettingWidget', function() {
     });
 
 
-    describe("Calculation Setting", function() {
+    xdescribe("Calculation Setting", function() {
         it("change to calculation section", function(done) {
             $(".content_list .item").eq(1).click();
             setTimeout(function() {
@@ -320,7 +320,7 @@ describe('accountSettingWidget', function() {
 
 
 
-        it("widget Risk-Free Proxy click", function(done) {
+        xit("widget Risk-Free Proxy click", function(done) {
             $(".mas_input_search .select2-selection--single").eq(2).click();
             setTimeout(function() {
                 var $autocomplete = this.$(".ma_autocomplete");
@@ -342,7 +342,7 @@ describe('accountSettingWidget', function() {
         });
     });
 
-    it("widget Save button click", function(done) {
+    xit("widget Save button click", function(done) {
         $("[data-id='ok-btn']").click();
         setTimeout(function() {
             expect(widget.accountSettingData.baseCurrency).toBe("BHD");

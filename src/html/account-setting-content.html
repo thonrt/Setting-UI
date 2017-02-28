@@ -1,16 +1,14 @@
 <div class="account_setting_content">
-    <div class="content_list">
-        <div class="item mas_item_list clearfix" data-id="item_general">
-            <div class="item-text pull-left">General</div>
-            <div class="item-icon ic-arrow-right-sm pull-right"></div>
-        </div>
-        <div class="item mas_item_list clearfix" data-id="item_calculation">
-            <div class="item-text pull-left">Calculation</div>
-            <div class="item-icon ic-arrow-right-sm pull-right" style="display:none"></div>
-        </div>
+    <ul class="col-xs-3 list-group">
+        <li class="mas_item_list list-group-item tab active" data-id="item_general">
+            General
+        </li>
+        <li class="mas_item_list list-group-item tab" data-id="item_calculation">
+            Calculation
+        </li>
+    </ul>
+    <div class="col-xs-9">
+        <div class="item_general">{GeneralSetting}</div>
+        <div class="item_calculation">{CalculationSettting}</div>
     </div>
-    <div class="content_body">
-        <div  class="item_general">{GeneralSetting}</div>
-        <div  class="item_calculation">{CalculationSettting}</div> 
-    </div>  
 </div>

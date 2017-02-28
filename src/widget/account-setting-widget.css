@@ -30,9 +30,6 @@
 .ma-account-setting-header .mas-ok-btn,
 .ma-account-setting-header .mas-cancel-btn {
     margin: 0 5px 0 0;
-    font-size: 12px;
-    padding: 2px 10px;
-    width: 50px;
 }
 
 .ma-account-setting .ma-account-setting-popupLayout .ma-common-main-block {
@@ -45,14 +42,29 @@
 
 .ma-account-setting-content {
     position: relative;
+    top: 10px;
 }
 
-.ma-account-setting-content .content_list {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 130px;
-    overflow: hidden;
+.ma-account-setting-content .account_setting_content {
+    padding-top: 20px;
+}
+
+.ma-account-setting-content .item_general .row,
+.ma-account-setting-content .item_calculation .row {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.ma-account-setting-content .item_general .row:last-child,
+.ma-account-setting-content .item_calculation .row:last-child {
+    border-bottom: 0;
+}
+
+.ma-account-setting-content .item_general .row:first-child,
+.ma-account-setting-content .item_calculation .row:first-child {
+    padding-top: 0;
 }
 
 .ma-account-setting-content .content_list .item {
@@ -81,15 +93,8 @@
     overflow: hidden;
 }
 
-.ma-account-setting .content_body_item .item_left,
-.ma-account-setting .content_body_item .item_right {
-    margin-right: 25px;
-}
-
 .ma-account-setting .content_body_item .item .sub_item {
     position: relative;
-    width: 320px;
-    font-size: 15px;
 }
 
 .ma-account-setting .content_body_item .item .switch.switch-inline {
@@ -99,7 +104,6 @@
 .ma-account-setting .content_body_item .item .radio,
 .ma-account-setting .content_body_item .item .checkout,
 .ma-account-setting .content_body_item .item .switch {
-    font-size: 13px;
     padding: 5px 8px 0 24px;
     margin: 5px 0;
 }
@@ -131,7 +135,6 @@
 
 .ma-account-setting .content_body_item .item .select-text {
     margin: 2px 0 0 5px;
-    font-size: 13px;
 }
 
 .ma-account-setting .content_body_item .item .select-icon {
